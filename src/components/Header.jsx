@@ -7,13 +7,29 @@ const Header = () => {
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center">
           <a
             href="#"
-            className="flex items-center whitespace-nowrap text-2xl font-black"
+            className="flex items-center text-xl font-semibold text-purple-700"
           >
-            <span className="mr-2 w-8">
-              <img src="/images/JOJj79gp_Djhwdp_ZOKLL.png"  />
+            <span>ShopDigest</span>
+            <span className="text-gray-300 mx-2">|</span>
+            <span className="flex items-center text-gray-700 text-base">
+              Shopify
+              <svg
+                className="ml-2 h-4 w-4 text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M6 9l6 6 6-6"
+                ></path>
+              </svg>
             </span>
-            spline
           </a>
+
           <input type="checkbox" className="peer hidden" id="navbar-open" />
           <label
             className="absolute top-5 right-5 cursor-pointer lg:hidden"
@@ -41,34 +57,43 @@ const Header = () => {
             <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
               <li className="lg:mr-12">
                 <a
-                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2"
                   href="#"
                 >
-                  Components
+                  Features
                 </a>
               </li>
               <li className="lg:mr-12">
                 <a
-                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2"
                   href="#"
                 >
-                  Pricing
+                  Marketplace
                 </a>
               </li>
               <li className="lg:mr-12">
                 <a
-                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2"
+                  href="#"
+                >
+                  Company
+                </a>
+                
+              </li>
+              <li className="lg:mr-12">
+                <a
+                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2"
+                  href="#"
+                >
+                  Team
+                </a>
+              </li>
+              <li className="lg:mr-12">
+                <a
+                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2"
                   href="#"
                 >
                   Contact
-                </a>
-              </li>
-              <li className="lg:mr-12">
-                <a
-                  className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
-                  href="#"
-                >
-                  FAQ
                 </a>
               </li>
             </ul>
@@ -76,11 +101,31 @@ const Header = () => {
             <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
               <a
                 href="#"
-                title=""
-                className="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-opacity-50"
+                title="Log in"
+                className="whitespace-nowrap rounded-xl border border-purple-700 text-purple-700 font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2 hover:text-opacity-50 px-6 py-1"
               >
-                {" "}
-                Log in{" "}
+                Log in
+              </a>
+              <a
+                href="#"
+                title="Post"
+                className="whitespace-nowrap rounded-xl bg-purple-700 text-white font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2 hover:bg-purple-800 px-6 py-1 flex items-center"
+              >
+                Add Post
+                <svg
+                  className="ml-2 h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M5 12h14m-7-7l7 7-7 7"
+                  ></path>
+                </svg>
               </a>
             </div>
           </nav>
